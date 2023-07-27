@@ -1,0 +1,25 @@
+<h1>Agregar Cliente</h1>
+
+<div class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Ex. Pesantez" value="" [(ngModel)]="vehiculo.nombre" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Apellido</mat-label>
+        <input matInput placeholder="Ex. Sebastian" value="" [(ngModel)]="vehiculo.apellido" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Cedula</mat-label>
+        <input matInput placeholder="999999999" value="" [(ngModel)]="vehiculo.cedula" required>
+      </mat-form-field>
+</div>
+
+<div class="example-button-row">
+  <button mat-fab extended color="accent" (click)="modificar()">
+    <mat-icon></mat-icon>
+    Registrar
+  </button>
+</div>

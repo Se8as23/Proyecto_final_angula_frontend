@@ -1,0 +1,38 @@
+/* Resetear estilos para listas y enlaces */
+ul, li {
+    background-color: #626da5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000; /* Cambia el color de los enlaces si lo deseas */
+  }
+  
+  /* Estilos para el menú */
+  nav {
+    background-color: #f2f2f2; /* Cambia el color de fondo si lo deseas */
+    padding: 10px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center; /* Centrar los elementos del menú */
+  }
+  
+  li {
+    margin: 0 10px; /* Espacio entre elementos del menú */
+  }
+  
+  /* Estilos para los enlaces */
+  a {
+    padding: 5px 10px;
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+  }
+  
+  a:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el ratón por encima */
+  }
+  

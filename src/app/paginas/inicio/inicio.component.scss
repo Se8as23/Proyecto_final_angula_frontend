@@ -1,0 +1,32 @@
+ 
+  .container {
+    position: relative;
+  }
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del texto */
+    left: 70%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto en el centro del contenedor */
+    color: rgb(8, 8, 8); /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+    font-weight: bold; /* Peso de la fuente del texto */
+
+  }
+
+  .text-overlay2 {
+    position: absolute;
+    top: 5%; /* Ajusta la posición vertical del texto */
+    left: 70%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto en el centro del contenedor */
+    color: rgb(97, 20, 20); /* Color del texto */
+    font-size: 50px; /* Tamaño de fuente del texto */
+    font-weight: bold; /* Peso de la fuente del texto */
+
+  }
+  h2 {
+    
+    text-align: center; /* Alinea el título adicional al centro */
+    font-size: 28px; /* Tamaño de fuente del título adicional */
+    margin-top: 20px; /* Espacio superior para separar el título de la imagen */
+  }
+  
