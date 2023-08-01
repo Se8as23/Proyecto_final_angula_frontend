@@ -1,10 +1,7 @@
-export class vehiculo{
-    //nombre: string ='';
-    //Apellido: string ='';
-    vid: string='';
-
-    apellido:String ='';
-    cedula :String ='';
-    nombre:String ='';
+export class Vehiculo{
     idVehiculo:number=0;
+    codigo: string='';
+    placa: string='';
+    modelo: string='';
+    marca : string='';
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { vehiculo } from '../domain/vehiculo';
+import { Vehiculo } from '../domain/vehiculo';
 
 
 @Injectable({
@@ -10,13 +10,13 @@ export class VehiculoService {
 
   constructor(private http:HttpClient) { }
 
-   save(vehiculo: vehiculo){
+   save(vehiculo: Vehiculo){
 
     return this.http.post<any>("http://localhost:8080/practica1SP/rs/clientes",vehiculo)
     
   }
 
-  update(vehiculo:vehiculo){
+  update(vehiculo:Vehiculo){
     return this.http.post<any>("http://localhost:8080/practica1SP/rs/clientes",vehiculo)
     
   }
@@ -25,7 +25,7 @@ export class VehiculoService {
     return this.http.get<any>("http://localhost:8080/practica1SP/rs/clientes/all")
   }
 
-  delete(vehiculo: vehiculo){
+  delete(vehiculo: Vehiculo){
     return this.http.delete("http://localhost:8080/practica1SP/rs/clientes/delete/"+vehiculo.idVehiculo)
   }
 }
