@@ -4,8 +4,8 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { VehiculoComponent } from './paginas/vehiculo/vehiculo.component';
 import { TicketComponent } from './paginas/ticket/ticket.component';
 import { TarifaComponent } from './paginas/tarifa/tarifa.component';
-import { FactoryTarget } from '@angular/compiler';
 import { FacturaComponent } from './paginas/factura/factura.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/paginas/inicio', pathMatch: 'full' },
@@ -22,6 +22,9 @@ const routes: Routes = [
 
   {path:'',redirectTo:'/paginas/factura', pathMatch: 'full'},
   {path:"paginas/factura",component: FacturaComponent},
+
+  {path:'',redirectTo:'/paginas/cliente', pathMatch: 'full'},
+  {path:"paginas/cliente",component: ClienteComponent},
 ];
 
 

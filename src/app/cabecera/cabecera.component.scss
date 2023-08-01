@@ -1,12 +1,19 @@
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
-    text-align: center;
-    color: rgb(255, 255, 255);
+    
+    color: rgb(10, 6, 37);
     background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-web-banner-blue-background-material-picture-image_1302670.jpg);
 
     background-color: #310f49;
-    color: #fff;
+    color: #000000;
     padding: 20px;
-    text-align: center;
+
+   
+    .imagen{
+      position: relative;
+      top: 50px; /* Ajusta la distancia desde la parte superior */
+      left: 100px;
+    }
   }
+
