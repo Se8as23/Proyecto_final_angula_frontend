@@ -1,0 +1,30 @@
+<div class="container col md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar factura</h3>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="placa">Fecha de la factura</label>
+                    <input type="text" class="form-control" [(ngModel)]="factura.fechaFactura" name="fechaFactura">
+                </div>
+                <div class="form-group">
+                    <label for="modelo">total</label>
+                    <input type="text" class="form-control" [(ngModel)]="factura.total" name="total">
+                </div>
+                <div class="form-group">
+                    <label for="marca">cliente</label>
+                    <input type="text" class="form-control" [(ngModel)]="factura.cliente!.codigo" name="cliente">
+                </div>
+                <div class="form-group">
+                    <label for="marca">Ticket</label>
+                    <input type="text" class="form-control" [(ngModel)]="factura.ticket!.codigo" name="ticket">
+                </div>
+                <button (click)="Guardar(factura)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

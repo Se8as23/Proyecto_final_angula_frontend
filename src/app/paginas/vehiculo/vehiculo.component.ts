@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { VehiculoService } from 'src/app/services/vehiculo.service';
-import { Vehiculo } from 'src/app/domain/vehiculo';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-vehiculo',
@@ -10,7 +11,20 @@ import { Vehiculo } from 'src/app/domain/vehiculo';
 })
 export class VehiculoComponent {
 
- 
-  
+  constructor(private router:Router){}
 
-}
+  Listar(){
+    this.router.navigate(["listar"]);
+
+  };
+
+  Nuevo(){
+    this.router.navigate(["agregar"]);
+
+  }
+
+};
+
+
+
+

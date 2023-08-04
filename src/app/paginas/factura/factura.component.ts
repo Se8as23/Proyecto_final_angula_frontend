@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-factura',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class FacturaComponent {
 
+  
+  constructor(private router:Router){}
+
+  Listar(){
+    this.router.navigate(["listarfactura"]);
+
+  };
+
+  Nuevo(){
+    this.router.navigate(["crearfactura"]);
+
+  }
 }

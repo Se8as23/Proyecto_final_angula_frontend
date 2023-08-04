@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3> Clientes </h3>
+        </div>
+        <div class="card-body">
+            <!-- <table class="table table-hover">
+
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Placa</th>
+                        <th>Modelo</th>
+                        <th>Marca</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            
+                            <button class="bnt ">Editar</button>
+                            <button class="btn ">Eliminar</button>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table> -->
+
+            <table class="table table-hover">
+            <span *ngIf="listadoCliente.length == 0">
+                No existen clientes
+              </span>
+              
+              <ul>
+                <li *ngFor="let cliente of listadoCliente">
+                    <a (click)="editar(cliente)">{{cliente.codigo}} | {{cliente.cedula}} | {{cliente.nombre}} | {{cliente.apellido}} | {{cliente.direccion}} | {{cliente.telefono}}&emsp;</a>
+                    <button class="btn btn-danger" (click)="eliminar(cliente)">Eliminar</button>
+                    <button class="btn btn-warning" (click)="editar(cliente)">Editar</button>
+                </li>
+              
+              </ul>
+            </table>
+        </div>
+    </div>
+</div>
